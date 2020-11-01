@@ -1,17 +1,21 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
-function App() {
+function Register() {
   return (
-    <div className="App">
+    <div className="Register">
       <Formik
-        initialValues={{ id: "", password: "" }}
+        initialValues={{ name: "", email: "", address: "", number: "", }}
         validate={values => {
           const errors = {};
           if (!values.name) {
-            errors.name = "";
-          }
-          return errors;
+            errors.name = 'Nome é necessário';
+          }else if (!values.email) {
+            errors.name = 'E-mail é necessário';
+          } else {
+            return errors; 
+        }
+        
         }}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
@@ -21,18 +25,24 @@ function App() {
         }}
       >
         {({ isSubmitting }) => (
-          <Form>Nome:
+          <Form><p>Nome:</p>
             <Field type="text" name="name" />
             <br />
             <ErrorMessage name="name" component="div" />
-            <br />Idade:
-            <Field type="text" name="idade" />
+            <br /><p>E-mail:</p>
+            <Field type="text" name="email" />
             <br />
-            <ErrorMessage name="idade" component="div" />
+            <ErrorMessage name="email" component="div" />
+            <br /><p>Endereço:</p>
+            <Field type="text" name="address" />
             <br />
-            <button type="submit" disabled={isSubmitting}>
+            <ErrorMessage name="address" component="div" /><p>Telefone:</p>
+            <Field type="text" name="number" />
+            <br />
+            <ErrorMessage name="number" component="div" />
+            <p><button type="submit" disabled={isSubmitting}>
               Enviar
-            </button>
+            </button></p>
           </Form>
         )}
       </Formik>
@@ -40,4 +50,4 @@ function App() {
   );
 }
 
-export default App;
+export default Register;
