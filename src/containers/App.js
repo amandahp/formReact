@@ -1,10 +1,12 @@
 import React from 'react'
+import Header from "../components/header"
 import Form from '../components/Form/TextInput'
 
 
 const App = ({ children }) => (
-    <>
-      <Form>
+    <>         
+      <Header/>
+      <Form> 
         {children}
       </Form>
     </>

@@ -1,0 +1,36 @@
+.app-header:before {top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    position: absolute;
+    transform: translateY(-105%);
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    transition: transform .9s cubic-bezier(0.25, 0.1, 0, 1.19);}
+
+.app-header {
+
+    align-items: center;
+    background: rgb(255,226,0);
+background: linear-gradient(90deg, rgba(255,226,0,1) 0%, rgba(255,248,0,1) 35%, rgba(254,255,98,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    transform: translateY(0);
+    font-family: 'Roboto', sans-serif !important;
+    
+}
+
+.app-header__logo {
+    background: transparent;
+    height: 25px;
+    width: 100px;
+}
+
+.formsLoggo{
+    height: 80px;
+    width: 190px;
+    margin-left: 5rem;
+}
+    
