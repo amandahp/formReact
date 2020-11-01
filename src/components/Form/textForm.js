@@ -1,5 +1,6 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import "./textForm.css"
 
 function Register() {
   return (
@@ -24,26 +25,27 @@ function Register() {
           }, 400);
         }}
       >
-        {({ isSubmitting }) => (
-          <Form><p>Nome:</p>
-            <Field type="text" name="name" />
-            <br />
-            <ErrorMessage name="name" component="div" />
-            <br /><p>E-mail:</p>
-            <Field type="text" name="email" />
-            <br />
-            <ErrorMessage name="email" component="div" />
-            <br /><p>Endereço:</p>
-            <Field type="text" name="address" />
-            <br />
-            <ErrorMessage name="address" component="div" /><p>Telefone:</p>
-            <Field type="text" name="number" />
-            <br />
-            <ErrorMessage name="number" component="div" />
-            <p><button type="submit" disabled={isSubmitting}>
-              Enviar
-            </button></p>
-          </Form>
+        {({ isSubmitting }) => ( 
+          <Form class="class-form">
+              <p class='text-form'>Nome</p>
+              <Field type="text" name="name" class="box" />
+              <br />
+              <ErrorMessage name="name" component="div" />
+              <br /><p class='text-form'>E-mail</p>
+              <Field type="text" name="email" class="box"/>
+              <br />
+              <ErrorMessage name="email" component="div" />
+              <br /><p class='text-form'>Endereço</p>
+              <Field type="text" name="address" class="box" />
+              <br />
+              <ErrorMessage name="address" component="div" /><p class='text-form'>Telefone</p>
+              <Field type="text" name="number" class="box" />
+              <br />
+              <ErrorMessage name="number" component="div" />
+              <p><button type="submit" disabled={isSubmitting} class="button-form">
+                Enviar
+              </button></p>            
+          </Form>           
         )}
       </Formik>
     </div>

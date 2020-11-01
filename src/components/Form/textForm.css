@@ -1,0 +1,33 @@
+.class-form{
+    background-image: url(https://image.freepik.com/fotos-gratis/fundo-de-textura-de-papel-preto-escuro-amassado_8087-1872.jpg);
+    color:white;
+    width: 500px ;
+    border-radius: 3%;
+    height: 500px;
+    padding-top: 100px;
+    border-bottom: 10px yellow;
+    opacity: 90% !important;
+    border-color:  url(https://cdn.pixabay.com/photo/2016/01/03/17/59/bananas-1119790_960_720.jpg);  
+    border-style: inset;
+}
+
+.box{
+    width: 400px;
+    margin-left: 45px;
+    border-style: 20px inset;
+    border-color: black;
+} 
+
+.button-form{
+    border-bottom: 0ch;
+    margin-left: 180px;
+    background: rgb(255,239,0);
+    border-radius: 5%;
+    height: 30.84px;
+    width: 141.41px;
+
+}
+
+.text-form{
+    margin-left: 220px;
+}

@@ -12,8 +12,8 @@
 .app-header {
     height: 100px;
     align-items: center;
-    background: rgb(255,226,0);
-    background: linear-gradient(90deg, rgba(255,226,0,1) 0%, rgba(255,248,0,1) 35%, rgba(254,255,98,1) 100%);
+    background: rgb(255,239,0);
+    background: linear-gradient(212deg, rgba(255,239,0,1) 49%, rgba(255,244,0,1) 63%, rgba(255,255,249,1) 95%);
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
