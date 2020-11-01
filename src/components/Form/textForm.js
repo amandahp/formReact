@@ -5,11 +5,11 @@ function App() {
   return (
     <div className="App">
       <Formik
-        initialValues={{ name: "", idade: "" }}
+        initialValues={{ id: "", password: "" }}
         validate={values => {
           const errors = {};
           if (!values.name) {
-            errors.name = "Required";
+            errors.name = "";
           }
           return errors;
         }}
@@ -21,17 +21,17 @@ function App() {
         }}
       >
         {({ isSubmitting }) => (
-          <Form>
+          <Form>Nome:
             <Field type="text" name="name" />
             <br />
             <ErrorMessage name="name" component="div" />
-            <br />
+            <br />Idade:
             <Field type="text" name="idade" />
             <br />
             <ErrorMessage name="idade" component="div" />
             <br />
             <button type="submit" disabled={isSubmitting}>
-              Submit
+              Enviar
             </button>
           </Form>
         )}

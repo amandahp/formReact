@@ -1,10 +1,10 @@
 import React from 'react'
 import App from '../containers/App'
 
-const pageForm = () => (
+const Home = () => (
     <App>
         <h1>Home</h1>
     </App>
 )
 
-export default pageForm
+export default Home

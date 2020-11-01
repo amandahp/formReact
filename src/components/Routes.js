@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Route} from 'react-router-dom'
-import pageForm from '../pages/pageForm'
+import Home from '../pages/Home'
 
 
 const Routes = () => (
     <BrowserRouter>       
-        <Route exact path="/" component={pageForm} />
+        <Route exact path="/" component={Home} />
     </BrowserRouter>
 );
 

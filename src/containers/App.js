@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from "../components/header"
-import Form from '../components/Form/TextInput'
+import Container from "../components/container"
 
 
 const App = ({ children }) => (
     <>         
       <Header/>
-      <Form> 
+      <Container> 
         {children}
-      </Form>
+      </Container>
     </>
 )
 
