@@ -1,0 +1,62 @@
+.app-menu__list {
+    display: flex;
+}
+
+.app-menu__item {
+    list-style: none;
+}
+
+.app-menu__link {
+    color: black;
+    font-family: sans-serif;
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.app-menu__link:hover {
+    text-decoration: underline;
+}
+
+.butCadastro{
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: inherit;
+    color:yellow;
+    background-color:black;
+    border-radius: 40px;
+    border-color: yellow;
+    font-weight: 700px !important;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 580 !important;  
+}
+
+.butCadastro:hover{
+    background-color: black(92, 59, 107);
+    color:white;
+    border-color: white;
+}
+
+.butLogin{
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: inherit;
+    color: yellow;
+    background-color: black;
+    border-radius: 40px;
+    border-color: yellow;
+    font-weight: 700px !important;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 580 !important;  
+}
+
+.butLogin:hover{
+    background-color: black(92, 59, 107);
+    color:white;
+    border-color: white;
+}
